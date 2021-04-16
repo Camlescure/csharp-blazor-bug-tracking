@@ -1,7 +1,7 @@
 @page "/new-bug" 
 
 <h3>Add New Bug</h3>
-<EditForm Model="AddBug" OnValidSubmit="@HandleValidSubmit">
+<EditForm Model="AddBug" OnValidSubmit="HandleValidSubmit">
     <InputText @bind-value="@AddBug.Title" placeholder="Enter Title"></InputText>
     <InputText @bind-value="@AddBug.Description" placeholder="Enter Description"></InputText>
     <InputNumber @bind-Value="@AddBug.Priority" placeholder="Enter Priority"></InputNumber>
